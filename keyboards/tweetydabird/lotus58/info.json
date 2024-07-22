@@ -6,23 +6,43 @@
     "diode_direction": "COL2ROW",
     "features": {
         "bootmagic": true,
+        "command": true,
+        "console": false,
         "encoder": true,
         "extrakey": true,
         "mousekey": true,
         "nkro": true,
-        "oled": true,
-        "rgblight": true,
-        "tri_layer": true
+        "oled": false,
+        "rgblight": false,
+        "rgb_matrix": true,
+        "split": true,
+        "tri_layer": false,
+        "caps_word": true
+    },
+    "tapping": {
+        "permissive_hold": true,
+        "hold_on_other_key_press": true
     },
     "rgblight": {
         "default": {
             "val": 87
         },
-        "led_count": 70,
+        "led_count": 12,
         "max_brightness": 175,
         "sleep": true,
         "split": true,
-        "split_count": [35, 35]
+        "split_count": [6, 6]
+    },
+    "rgb_matrix": {
+        "default": {
+            "on": true,
+            "val": 87
+        },
+        "led_count": 58,
+        "max_brightness": 175,
+        "sleep": true,
+        "split_count": [29, 29],
+        "driver": "ws2812"
     },
     "split": {
         "bootmagic": {
@@ -35,7 +55,7 @@
                 "layer_state": true,
                 "matrix_state": true,
                 "modifiers": true,
-                "oled": true
+                "oled": false
             }
         },
         "usb_detect": {
